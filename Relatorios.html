@@ -16,7 +16,42 @@
             <button type="button" id="Destaques"class="NavigationButton" onclick="window.location.href ='Destaques.html'">Destaques</button>
         </div>
     </header>   
+
+    <div class="container" id="Relatorios">
+
+        <form id="formRelatorios" class="input">
+           
+            <label for="usuario">Usuário:</label>
+            <select name="usuario" id="usuario" class="Especies">
+                
+            </select>
+            
+            <label for="tipoArvore">Tipo de Árvore:</label>
+            <select id="tipoArvore" name="tipoArvore" class="Especies">
+                <option value="">-- Espécies --</option>
+                <option value="Ipês">Ipês</option>
+                <option value="Angicos">Angicos</option>
+                <option value="Aroeiras">Aroeiras</option>
+                <option value="Jequitibás">Jequitibás</option>
+                <option value="Peroba do Campo">Peroba do Campo</option>
+            </select>
+
+            <section>
+                <label for="resultado">Resultado</label>               
+                <p class="dadosBio" id="resultado">--</p>
+            </section>
+
+            
+        </form>
+        <div class="button-relatorios">
+            <button form="Relatorios" type="submit" class="buttoncss" >Buscar</button>
+        </div>
+    </div>
     
+    
+
+
 </body>
     <script type="module" src="script.js"></script>
+    <script type="module" src="Relatorios.js"></script>
 </html>

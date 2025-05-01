@@ -9,31 +9,66 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 50px;
+    
 }
+
+#avatar{
+    padding-top: 25px;
+}
+
+#img-avatar{   
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid white;  
+    
+}
+
+
 
 .dadosBio{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;    
+    align-items: flex-start;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     padding: 20px;
+    max-height: 400px;
+    
+}
+
+#digitebio{    
+    padding-top: 10px;    
+    word-break: break-word;
+    width: 300px;    
+    overflow-y: scroll;
+    height: 400px;
+    outline: none;
+    
 }
 .Mybio{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 300px;    
+    
+   
 }
+
+
 #bio, #Dados, #Evolucao{
     background-color: var(--background-color);
     padding: 20px;
     border-radius: 20px;
 }
+
+
 
 .h1perfil{
     text-align: center;
@@ -150,7 +185,7 @@ body {
     
 }
 
-#input{
+.input{
     color: rgb(122, 249, 122);
     background-color: var(--background-color);
     border-radius: 20px;
@@ -168,7 +203,7 @@ input[type="text"], input[type="password"] {
     border: none;
 }
 
-#button-salvar, #button-Acoes button, #button-cadastro button {
+.button-relatorios button, #button-bio button, #button-Acoes button, #button-cadastro button {
     border: none;
     border-radius: 20px;
     padding: 10px;
@@ -179,12 +214,8 @@ input[type="text"], input[type="password"] {
     color: rgb(122, 249, 122);
 }
 
-#button-Acoes, #button-salvar:hover {
-    transform: scale(1.1);
-    
-}
 
-#button-cadastro:hover {
+.buttoncss:hover {
     transform: scale(1.1);
     
 }
