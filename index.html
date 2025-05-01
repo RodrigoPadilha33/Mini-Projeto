@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoveryNature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="NomeSite">
+            <h1>Green Legacy</h1>
+            <p>Your legacy start here!</p>
+        </div>
+        <form id="form" >
+
+            <div id="input">
+                <div>
+                    <h2>Cadastro</h2>
+                    <h3>Insira seus dados abaixo!</h3>
+                </div>
+                <input id="Nome" type="text" placeholder="Nome">
+                <input id="Senha" type="password" placeholder="Senha">
+            </div>
+
+            <div id="button-themes">
+                <label class="theme" id="PauBrasil">
+                    <input type="radio" name="theme" data-theme="pauBrasil">
+                    <span class="hidden" style="color: #A52A2A;">Pau Brasil</span>
+                </label>
+
+                <label class="theme" id="Castanheira">
+                    <input type="radio" name="theme" data-theme="castanheira">
+                    <span class="hidden" style="color: #8B4513;">Castanheira</span>
+                </label>
+
+                <label class="theme" id="PerobaRosa">
+                    <input type="radio" name="theme" data-theme="perobaRosa">
+                    <span class="hidden" style="color: rgb(248, 139, 157);">Peroba Rosa</span>
+                </label>
+            </div>  
+        </form>
+        
+        <div id="button-cadastro">
+            <button form="form" type="submit" id="botao-cadastrar" >Cadastrar</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+

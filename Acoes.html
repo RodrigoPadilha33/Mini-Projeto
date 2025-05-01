@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>   
+    
+<body>
+    <header class="NavBar">
+        <div class="DivNavigation">
+            <button type ="button" id="Acoes" class="NavigationButton" onclick="window.location.href ='Acoes.html'">Ações</button>
+            <button type="button" id="Perfil"class="NavigationButton" onclick="window.location.href ='Perfil.html'">Perfil</button>
+            <button type="button" id="Relatorios"class="NavigationButton" onclick="window.location.href ='Relatorios.html'">Relatórios</button>
+            <button type="button" id="Destaques"class="NavigationButton" onclick="window.location.href ='Destaques.html'">Destaques</button>
+        </div>
+    </header>   
+    <div class="container">
+        <div id="NomeSite">
+            <h1>Green Legacy</h1>
+            <p>Your legacy start here!</p>
+        </div>
+        <form id="form" >
+
+            <div id="input">
+                <div>
+                    <h2>Cadastre aqui seu legado!</h2>
+                </div>
+                <!-- <label id="labelArvores" for="Arvores">Espécie:</label> -->
+                <select id="Arvores" class="Especies">
+                    <option value="">-- Espécies --</option>
+                    <option value="Ipês">Ipês</option>
+                    <option value="Angicos">Angicos</option>
+                    <option value="Aroeiras">Aroeiras</option>
+                    <option value="Jequitibás">Jequitibás</option>
+                  </select>
+                <!-- <label id="labelQuantidade" for="quantidade">Quantidade:</label> -->
+                <input id="quantidade" type="number" placeholder="--Quantidade Plantada--">                
+            </div>
+
+            <div id="button-Acoes">
+                <button form="form" type="submit" id="botao-acoes" >Enviar</button>
+            </div>
+          
+              
+        </form>
+</body>
+    <script type="module" src="Acoes.js"></script>
+    <script type="module" src="script.js"></script>
+</html>

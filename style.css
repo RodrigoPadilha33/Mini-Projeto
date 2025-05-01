@@ -1,0 +1,277 @@
+:root {
+    --background-color: rgba(110, 245, 0, 0.52);
+    --color-text: rgb(255, 4, 4);
+    --background-img: url('images/pau-Brasil.jpg');
+}
+
+.Perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dadosBio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+}
+.Mybio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#bio, #Dados, #Evolucao{
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.h1perfil{
+    text-align: center;
+    color:rgb(122, 249, 122);
+}
+
+.DivNavigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:flex;     
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    gap: 30px;
+    /* background-color: var(--background-color); */    
+    outline: none;
+}
+
+
+
+.NavigationButton {
+    transform: none;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 20px;    
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: rgb(122, 249, 122);
+    /* animation: neon 1.5s ease-in-out infinite alternate; */
+    justify-content: space-between;   
+    border: none; 
+}
+
+.NavigationButton:hover {
+    transform: scale(1.1);   
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: var(--background-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;      
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+#NomeSite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: rgb(122, 249, 122);
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+#NomeSite p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+@keyframes neon {
+    from { text-shadow: 0 0 5px #5c5c5c, 0 0 10px #fff, 0 0 15px #0a5e0a; }
+    to { text-shadow: 0 0 10px #fefffd, 0 0 15px #00ff77, 0 0 20px #086131; }
+}
+
+#labelArvores, #labelQuantidade{
+    font-weight: 500;
+    margin-bottom: 25px;
+    color:rgb(122, 249, 122);
+}
+
+#labelQuantidade input, ::placeholder {
+    color: black;
+   
+}
+
+#quantidade, .Especies {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+    background-color: yellowgreen;
+    
+}
+
+#input{
+    color: rgb(122, 249, 122);
+    background-color: var(--background-color);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input[type="text"], input[type="password"] {   
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+}
+
+#button-salvar, #button-Acoes button, #button-cadastro button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: var(--background-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: rgb(122, 249, 122);
+}
+
+#button-Acoes, #button-salvar:hover {
+    transform: scale(1.1);
+    
+}
+
+#button-cadastro:hover {
+    transform: scale(1.1);
+    
+}
+
+/* Área dos temas */
+#button-themes {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+    transform: scale(1.1);
+    background-color: var(--background-color);
+    outline: none;
+}
+
+/* Estilização do label (envolve checkbox e texto) */
+.theme {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+/* Oculta o checkbox nativo */
+.theme input[type="radio"] {
+    display: none;
+    
+}
+
+
+.theme input[type="radio"]:checked + .hidden {
+    opacity: 1;
+}
+
+/* Texto escondido dentro do botão */
+.theme .hidden {          
+    outline: none; /*remove o contoro da imagem*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover para aparecer o texto */
+.theme:hover {
+    transform: scale(1.2);
+    outline: none;
+    box-shadow: none;
+}
+
+.theme:hover .hidden {
+    opacity: 1;
+    box-shadow: none;
+   
+}
+
+/* Cada tema com imagem de fundo */
+#PauBrasil {
+    background-image: url('images/pau-Brasil.jpg');
+}
+
+#Castanheira {
+    background-image: url('images/castanheira.jpg');
+}
+
+#PerobaRosa {
+    background-image: url('images/peroba-rosa.jpg');
+}

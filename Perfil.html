@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="NavBar">
+        <div class="DivNavigation">
+            <button type="button" id="Acoes" class="NavigationButton"
+                onclick="window.location.href ='Acoes.html'">Ações</button>
+            <button type="button" id="Perfil" class="NavigationButton"
+                onclick="window.location.href ='Perfil.html'">Perfil</button>
+            <button type="button" id="Relatorios" class="NavigationButton"
+                onclick="window.location.href ='Relatorios.html'">Relatórios</button>
+            <button type="button" id="Destaques" class="NavigationButton"
+                onclick="window.location.href ='Destaques.html'">Destaques</button>
+        </div>
+    </header>
+    
+    <div class="Perfil">
+        <div class="Mybio">
+            <div id="bio">
+                <h1 class="h1perfil">Minha Bio</h1>
+                <p class="dadosBio" contenteditable="true">Digite sua bio aqui!!</p>
+            </div>
+            <div id="button-bio">
+                <button id="button-salvar">Salvar</button>
+            </div>
+        </div>
+
+        <div id="Dados">
+            <h1 class="h1perfil">Dados:</h1>
+            <div class="dadosBio">
+                <p id ="Nome-perfil"><strong>Nome:</strong></p>
+                <p><strong>Telefone:</strong></p>
+                <p><strong>Email:</strong></p>
+                <p><strong>Idade:</strong></p>
+            </div>
+        </div>
+
+        <div id="Evolucao">
+            <h1 class="h1perfil">Evolução:</h1>
+            <div class="dadosBio">
+                <p id="ArvoresPlantadas"><strong>Arvores Plantadas:</strong></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script type="module" src="script.js"></script>
+<script type="module" src="Perfil.js"></script>
+<script type="module" src="Acoes.js"></script>
+
+</html>
