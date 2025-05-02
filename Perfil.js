@@ -54,6 +54,10 @@ function salvarbio() {
     
     if(salvar) {
         salvar.addEventListener('click', (e) => {
+        
+        if(salvar) {
+            e.preventDefault();
+        }
                         
             const bio = document.getElementById('digitebio').textContent;
 
