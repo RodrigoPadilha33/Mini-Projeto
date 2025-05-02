@@ -29,26 +29,40 @@ function TotalAcoes() {
 
 function TrocaAvatar() {
     const quantidade = parseInt(localStorage.getItem('quantidade'));
-    console.log(quantidade);
-    const avatar= document.getElementById('img-avatar');
+    const temaSelecionado = localStorage.getItem('temaselecionado'); // Obtém o tema salvo
     
-    if (quantidade >= 1500){
-        avatar.src = 'images/adulta-brasilavatar.jpg';
-    }else if (quantidade >= 700) {
-        avatar.src = 'images/jovem-brasilavatar.jpg';
-    }else if (quantidade >= 300) {
-        avatar.src = 'images/broto-brasilavatar.jpg';
-    } else if (quantidade >= 100) {
-        avatar.src = 'images/semente-brasilavatar.jpg';
-    }else {
-        console.log('Quantidade nao encontrada.');
-    };  
-    
+    const avatar = document.getElementById('img-avatar');
 
+        const temas = {
+        'pauBrasil': {
+            1500: 'images/adulta-brasilavatar.jpg',
+            700: 'images/jovem-brasilavatar.jpg',
+            300: 'images/broto-brasilavatar.jpg',
+            100: 'images/semente-brasilavatar.jpg'
+        },'castanheira': {
+            1500: 'images/adulta-avatarcastanheira.jpg',
+            700: 'images/joven-avatarcastanheira.jpg',
+            300: 'images/broto-avatarcastanheira.jpg',
+            100: 'images/semente-avatarcastanheira.jpg'
+        }
+        
+    };
+
+    if (quantidade && temas[temaSelecionado]) {
+        if (quantidade >= 1500) {
+            avatar.src = temas[temaSelecionado][1500];
+        } else if (quantidade >= 700) {
+            avatar.src = temas[temaSelecionado][700];
+        } else if (quantidade >= 300) {
+            avatar.src = temas[temaSelecionado][300];
+        } else if (quantidade >= 100) {
+            avatar.src = temas[temaSelecionado][100];
+        } else {
+            console.log('Quantidade não encontrada.');
+
+        }
+    }
 }
-
-
-    
 function salvarbio() {
     const salvar = document.getElementById('button-salvar');
     
