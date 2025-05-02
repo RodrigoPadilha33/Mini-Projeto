@@ -19,7 +19,11 @@ const registros = [
     { nome: "Paula", quantidadePlantada: 7, tipoArvore: "Aroeiras" },
     { nome: "Gustavo", quantidadePlantada: 14, tipoArvore: "Jequitibás" },
     { nome: "Sofia", quantidadePlantada: 9, tipoArvore: "Peroba do Campo" }
+
+
 ];
+
+
 function filtronome() {
     const relatorios = document.getElementById("botao-relatorios");
 
