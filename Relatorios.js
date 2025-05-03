@@ -1,11 +1,11 @@
 
 function inicializar() {    
-    preenchernomes()
-    filtronome()
+     filtronome()
     
 }   
 
 document.addEventListener('DOMContentLoaded', inicializar);
+
 
 
 const registros = [
@@ -22,6 +22,8 @@ const registros = [
 
 
 ];
+
+export { registros };
 
 
 function filtronome() {

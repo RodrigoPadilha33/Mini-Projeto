@@ -28,7 +28,7 @@
 
 
 
-.dadosBio{
+.dadosBio, #DadosDestaques{
     display: flex;
     flex-direction: column;    
     align-items: flex-start;
@@ -50,7 +50,7 @@
     outline: none;
     
 }
-.Mybio{
+.Mybio, .Destaques {
     
     display: flex;
     flex-direction: column;
@@ -63,7 +63,12 @@
 }
 
 
-#bio, #Dados, #Evolucao{
+#bio, #Dados, #Evolucao, #AreaDestaques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background-color: var(--background-color);
     padding: 20px;
     border-radius: 20px;
@@ -71,7 +76,10 @@
 
 
 
-.h1perfil{
+.h1perfil, .H1Destaques{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
     text-align: center;
     color:rgb(122, 249, 122);
 }
