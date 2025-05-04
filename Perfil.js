@@ -44,6 +44,11 @@ function TrocaAvatar() {
             700: 'images/joven-avatarcastanheira.jpg',
             300: 'images/broto-avatarcastanheira.jpg',
             100: 'images/semente-avatarcastanheira.jpg'
+        },'perobaRosa': {
+            1500: 'images/adulta-rosa.jpg',
+            700: 'images/jovem-rosa.jpg',
+            300: 'images/broto-rosa.jpg',
+            100: 'images/semente-rosa.jpg'
         }
         
     };
