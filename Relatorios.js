@@ -1,7 +1,7 @@
 
 function inicializar() {    
      filtronome()
-    
+    preenchernomes()
 }   
 
 document.addEventListener('DOMContentLoaded', inicializar);
