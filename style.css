@@ -41,7 +41,10 @@
     
 }
 
-#digitebio{    
+#digitebio, #DadosDestaques{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;    
     padding-top: 10px;    
     word-break: break-word;
     width: 300px;    

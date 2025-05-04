@@ -33,16 +33,19 @@ function Acoes() {
                 if (NovaQuantidade) {
                     const somaquantidade = QtdAtual + NovaQuantidade;
                     localStorage.setItem('quantidade',somaquantidade);
+                    console.log(somaquantidade);
+                    
                 }else {
                     console.log('Quantidade nao encontrada.');
                 }
                 
-
                 alert("Quantidade enviada com sucesso.");
                 console.log('Dados do Manejo:', dadosManejo);
                 console.log('Json String:', JSON.stringify(dadosManejo));
-                console.log('Quantidade :', quantidade);
-
+                console.log('Quantidade enviada :', quantidade);
+                console.log ('Quantidade total:', localStorage.getItem('quantidade'));
+                
+                
             }else {
                 alert("Preencha os campos.");
             };
